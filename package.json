@@ -1,0 +1,16 @@
+{
+  "name": "qso-field",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Documentation-first state-aware network prototype for QSO Field.",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --test --loader ts-node/esm test/*.test.ts"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "ts-node": "latest",
+    "typescript": "latest"
+  }
+}
