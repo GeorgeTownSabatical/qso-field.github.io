@@ -30,6 +30,7 @@ QSO object
 | `src/core/events.ts` | provider execution, route telemetry, and validator observation events |
 | `src/core/router.ts` | state-aware route scoring, envelopes, exchange sessions, and telemetry |
 | `src/core/fabric.ts` | tensor-fabric inspired relation and coherence scoring |
+| `src/core/render.ts` | non-VR cognitive render projections for fabric topology |
 | `src/core/local-fabric.ts` | adapter from QSO Field objects to local `qso-fabric` execution envelopes |
 | `src/core/local-fabric-fixture.ts` | deterministic bridge fixture for examples and smoke tests |
 | `src/core/chain.ts` | append-only chain records and Proof of Coherence checks |
@@ -89,6 +90,22 @@ const envelope = buildQSOFabricExecutionEnvelope({
 ```
 
 That envelope can be passed to the local fabric runtime's `execute_fabric_payload(...)` path. ITensor remains optional; deterministic fallback remains the default public behavior.
+
+## Non-VR Cognitive Render Projection
+
+QSO Field renders topology first as deterministic JSON. Browser, terminal,
+canvas, and later VR surfaces should consume the same projection rather than
+inventing their own scoring layer.
+
+```ts
+import { createCognitiveRenderProjection } from "qso-field";
+
+const projection = createCognitiveRenderProjection({
+  fabricId: "fabric.example",
+  objects,
+  relations,
+});
+```
 
 To print a ready-to-execute fixture envelope:
 

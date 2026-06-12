@@ -103,3 +103,11 @@ The provider contract does not require:
 - privileged cloud infrastructure
 
 Every integration should work first on ordinary infrastructure.
+
+## Render Adoption
+
+Projects that need visibility into fabric state should use
+`createCognitiveRenderProjection(...)` before building custom UI. The projection
+is non-VR, deterministic, and JSON-safe, so it can feed terminal summaries,
+static diagrams, dashboards, or future WebXR views without changing the scoring
+semantics.

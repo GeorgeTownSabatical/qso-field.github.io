@@ -8,6 +8,7 @@ export * from "./core/local-fabric.js";
 export * from "./core/local-fabric-fixture.js";
 export * from "./core/provenance.js";
 export * from "./core/qso-object.js";
+export * from "./core/render.js";
 export * from "./core/router.js";
 export * from "./core/schema.js";
 export * from "./core/validators.js";
