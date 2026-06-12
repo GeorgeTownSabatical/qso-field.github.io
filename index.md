@@ -32,6 +32,8 @@ Instead of asking only where a packet should go, QSO Field asks:
 - [Vision](docs/vision.md)
 - [Architecture](docs/architecture.md)
 - [Framework](docs/framework.md)
+- [Local Provider](docs/local-provider.md)
+- [Event Schemas](docs/event-schemas.md)
 - [Repository Map](docs/repository-map.md)
 - [Packages](docs/packages.md)
 - [Adoption Plan](docs/adoption.md)
@@ -43,4 +45,6 @@ Instead of asking only where a packet should go, QSO Field asks:
 
 ## Repository Rule
 
-No implementation code is added until the public architecture, package map, adoption story, integration plan, and repository templates are complete.
+Implementation follows the public architecture. Code should remain small,
+documented, testable, and traceable to the package map, adoption story,
+integration plan, and repository templates.

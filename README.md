@@ -9,6 +9,8 @@ Traditional networks route packets. QSO Field routes state.
 - [Home](index.md)
 - [Architecture](docs/architecture.md)
 - [Framework](docs/framework.md)
+- [Local Provider](docs/local-provider.md)
+- [Event Schemas](docs/event-schemas.md)
 - [Packages](docs/packages.md)
 - [Adoption Plan](docs/adoption.md)
 - [Quantum / iTensor Backbone](docs/quantum-itensor.md)
