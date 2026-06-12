@@ -8,6 +8,13 @@ a transport-agnostic way.
 These schemas are intentionally small so independent implementations can
 produce compatible records before a full network exists.
 
+The TypeScript framework exposes helpers in `src/core/events.ts`:
+
+- `createProviderExecutionEvent(...)`
+- `routeTelemetryToEvent(...)`
+- `validatorObservationToEvent(...)`
+- `eventHash(...)`
+
 ## Provider Execution Event
 
 Emitted when a project hands a QSO Field envelope to a local provider.

@@ -1,6 +1,7 @@
 export * from "./core/chain.js";
 export * from "./core/confidence.js";
 export * from "./core/contracts.js";
+export * from "./core/events.js";
 export * from "./core/fabric.js";
 export * from "./core/kernel.js";
 export * from "./core/local-fabric.js";

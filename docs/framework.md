@@ -27,6 +27,7 @@ QSO object
 | `src/core/confidence.ts` | confidence creation and combination |
 | `src/core/kernel.ts` | kernel records, worldlines, state frames, morphisms, branches, runtime projections |
 | `src/core/contracts.ts` | smart and genius contract execution |
+| `src/core/events.ts` | provider execution, route telemetry, and validator observation events |
 | `src/core/router.ts` | state-aware route scoring, envelopes, exchange sessions, and telemetry |
 | `src/core/fabric.ts` | tensor-fabric inspired relation and coherence scoring |
 | `src/core/local-fabric.ts` | adapter from QSO Field objects to local `qso-fabric` execution envelopes |
