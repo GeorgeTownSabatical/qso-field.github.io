@@ -4,7 +4,23 @@
   "private": true,
   "description": "Documentation-first state-aware network prototype for QSO Field.",
   "type": "module",
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "import": "./dist/src/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "docs",
+    "README.md",
+    "index.md"
+  ],
   "scripts": {
+    "build": "tsc",
+    "bridge:envelope": "node dist/examples/local-fabric-bridge.js",
     "typecheck": "tsc --noEmit",
     "test": "node --test --loader ts-node/esm test/*.test.ts"
   },
