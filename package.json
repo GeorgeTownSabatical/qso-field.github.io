@@ -21,6 +21,7 @@
   "scripts": {
     "build": "tsc",
     "bridge:envelope": "node dist/examples/local-fabric-bridge.js",
+    "ci": "npm run typecheck && npm test && npm run build && npm run bridge:envelope",
     "typecheck": "tsc --noEmit",
     "test": "node --test --loader ts-node/esm test/*.test.ts"
   },
