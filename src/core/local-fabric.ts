@@ -83,7 +83,7 @@ export function detectLocalFabricProvider(env: NodeJS.ProcessEnv = process.env):
     fieldRoot: env.QSO_FIELD_ROOT ?? "/Users/ALISTAIRE/qso-field",
     fieldRepo: env.QSO_FIELD_REPO ?? "aevespers2/qso-field.github.io",
     fieldRepoUrl: env.QSO_FIELD_REPO_URL ?? "https://github.com/aevespers2/qso-field.github.io",
-    fieldSiteUrl: env.QSO_FIELD_SITE_URL ?? "https://aevespers2.github.io/qso-field.github.io/",
+    fieldSiteUrl: env.QSO_FIELD_SITE_URL ?? "https://vespersinc.com/",
     contractModes: (env.QSO_CONTRACT_MODES ?? "smart,genius")
       .split(",")
       .map((mode) => mode.trim())

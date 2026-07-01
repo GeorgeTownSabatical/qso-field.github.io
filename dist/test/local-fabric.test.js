@@ -6,6 +6,7 @@ test("local fabric provider defaults to deterministic fallback and canonical fie
     assert.equal(provider.fabricRoot, "/Users/ALISTAIRE/qso-fabric");
     assert.equal(provider.fieldRoot, "/Users/ALISTAIRE/qso-field");
     assert.equal(provider.fieldRepo, "aevespers2/qso-field.github.io");
+    assert.equal(provider.fieldSiteUrl, "https://vespersinc.com/");
     assert.equal(provider.deterministicFallback, true);
     assert.deepEqual(provider.contractModes, ["smart", "genius"]);
 });

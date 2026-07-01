@@ -30,6 +30,7 @@ Expected defaults:
 QSO_FABRIC_ROOT=/Users/ALISTAIRE/qso-fabric
 QSO_FIELD_ROOT=/Users/ALISTAIRE/qso-field
 QSO_FIELD_REPO=aevespers2/qso-field.github.io
+QSO_FIELD_SITE_URL=https://vespersinc.com/
 QSO_CONTRACT_MODES=smart,genius
 QSO_ITENSOR_RUNNER=unset
 ```

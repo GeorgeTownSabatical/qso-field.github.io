@@ -36,7 +36,7 @@ test("provider execution event records provider and fallback semantics", () => {
   assert.equal(event.itensor_runner, null);
   assert.equal(event.result_hash, "sha256:849f076e2e8a6639e5ce6325801b383546087dae9e4a6d7cf6482eadb39c8036");
   assert.equal(event.metadata.test, true);
-  assert.equal(eventHash(event), "sha256:04c61de9eb539761b6475055d0769575d9694a4014c29fa83eaaa2a9f622388f");
+  assert.equal(eventHash(event), "sha256:9bf1ee4e783d887b983651d53d8e858ae295e680da5193eb996a4552f4ea5444");
 });
 
 test("route telemetry converts to documented event shape", () => {

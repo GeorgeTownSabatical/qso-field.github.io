@@ -1,7 +1,7 @@
 {
   "schema_version": "qso-field.local-provider.v0.1",
   "field_repo": "aevespers2/qso-field.github.io",
-  "field_site_url": "https://aevespers2.github.io/qso-field.github.io/",
+  "field_site_url": "https://vespersinc.com/",
   "field_root": "/Users/ALISTAIRE/qso-field",
   "fabric_root": "/Users/ALISTAIRE/qso-fabric",
   "environment_helper": "/Users/ALISTAIRE/Codex/tools/qso_fabric_env.sh",
