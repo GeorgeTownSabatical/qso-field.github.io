@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Solis Field | Vespers Inc</title>
+    <meta name="description" content="A realtime four-dimensional QSO Field representation focused on Solis transaction flow.">
+    <link rel="canonical" href="https://vespersinc.com/">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/site.css">
+  </head>
+  <body>
+    <div class="site-shell solis-shell">
+      <header class="topbar">
+        <a class="brand" href="/">
+          <span class="brand-mark">S</span>
+          <span>Solis Field</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <a href="docs/architecture.html">Architecture</a>
+          <a href="docs/framework.html">Framework</a>
+          <a href="docs/local-provider.html">Provider</a>
+          <a href="docs/security-model.html">Security</a>
+          <a href="docs/domain.html">Domain</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="field-stage" aria-labelledby="field-title">
+          <canvas id="solis-field" aria-label="Realtime Solis transaction field"></canvas>
+          <div class="field-shade" aria-hidden="true"></div>
+          <div class="field-copy">
+            <p class="eyebrow">Vespers Inc / QSO Field / Solis</p>
+            <h1 id="field-title">A four-dimensional transaction field.</h1>
+            <p class="hero-copy">
+              Solis transaction flow projected through rail, counterpart, risk,
+              and time. Every pulse is a QSO object in motion.
+            </p>
+            <div class="hero-actions" aria-label="Field modes">
+              <button class="button primary" id="mode-live" type="button">Live</button>
+              <button class="button" id="mode-risk" type="button">Risk</button>
+              <button class="button" id="mode-rail" type="button">Rails</button>
+            </div>
+          </div>
+
+          <aside class="field-panel" aria-label="Field telemetry">
+            <div>
+              <span class="panel-label">throughput</span>
+              <strong id="metric-throughput">0 tps</strong>
+            </div>
+            <div>
+              <span class="panel-label">volume</span>
+              <strong id="metric-volume">$0</strong>
+            </div>
+            <div>
+              <span class="panel-label">risk pressure</span>
+              <strong id="metric-risk">0.00</strong>
+            </div>
+            <div>
+              <span class="panel-label">field time</span>
+              <strong id="metric-time">00:00</strong>
+            </div>
+          </aside>
+        </section>
+
+        <section class="status-strip" aria-label="Field status">
+          <div class="status-item">
+            <strong>4D</strong>
+            <span>x/y/z position plus animated transaction time</span>
+          </div>
+          <div class="status-item">
+            <strong>5</strong>
+            <span>Solis rails mapped from the channel registry</span>
+          </div>
+          <div class="status-item">
+            <strong>32</strong>
+            <span>seed transactions in the public field replay</span>
+          </div>
+          <div class="status-item">
+            <strong>QSO</strong>
+            <span>transaction pulses rendered as state objects</span>
+          </div>
+        </section>
+
+        <section class="section split" aria-labelledby="solis-title">
+          <div class="section-header">
+            <h2 id="solis-title">Solis As Field Dynamics</h2>
+            <p>
+              The public surface now centers on transactions: custody, realtime
+              operations, forensic review, legal drafting, and dashboard reporting
+              appear as rails in one coherent state space.
+            </p>
+          </div>
+          <pre class="terminal"><code><b>field</b>: solis.transaction.qso
+<b>x</b>: counterparty vector
+<b>y</b>: rail and channel height
+<b>z</b>: risk and custody pressure
+<b>t</b>: animated settlement timeline
+<b>source</b>: assets/solis-transactions.json</code></pre>
+        </section>
+
+        <section class="section" aria-labelledby="docs-title">
+          <div class="section-header">
+            <h2 id="docs-title">Underlying Contracts</h2>
+            <p>Keep the spectacle tied to the spec. The field is only useful if the state remains auditable.</p>
+          </div>
+          <div class="docs-grid">
+            <a class="doc-link" href="docs/state-router.html">
+              <h3>State Router</h3>
+              <p>How route selection weighs coherence, latency, trust, and repair cost.</p>
+            </a>
+            <a class="doc-link" href="docs/proof-of-coherence.html">
+              <h3>Proof Of Coherence</h3>
+              <p>Validation model for consistency, availability, and provenance.</p>
+            </a>
+            <a class="doc-link" href="docs/qso-schema-v0.1.html">
+              <h3>QSO Schema</h3>
+              <p>The object structure behind each transaction pulse.</p>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <span>Vespers Inc / Solis Field</span>
+        <span>Realtime transaction surface for coherence-preserving state.</span>
+      </footer>
+    </div>
+
+    <script type="module" src="assets/solis-field.js"></script>
+  </body>
+</html>
